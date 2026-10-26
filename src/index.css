@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color-scheme: light;
+  
+  --bg-canvas: #F6F7F4;
+  --bg-surface: #FFFFFF;
+  --color-primary: #263B8F;
+  --color-primary-dark: #18265F;
+  --color-secondary: #6F7FAF;
+  --color-accent: #6FA58A;
+  --color-text-primary: #18202A;
+  --color-text-secondary: #68717D;
+  --color-border: #E4E7E2;
+  --color-active-nav-bg: #ECEEFA;
+  
+  --risk-low: #3D8B68;
+  --risk-medium: #C58A32;
+  --risk-high: #C45151;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F6F7F4;
+  color: #18202A;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom crisp scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F7F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5D9D2;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B0B7AC;
+}
+
+/* Print Styles for official college reports */
+@media print {
+  aside, header, nav, button, .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
