@@ -8,12 +8,12 @@ export default function LoginScreen() {
 
   // Faculty form state
   const [email, setEmail] = useState("faculty@university.edu");
-  const [password, setPassword] = useState("••••••••••••");
+  const [password, setPassword] = useState("faculty123");
   const [role, setRole] = useState("faculty");
 
   // Student form state
   const [studentId, setStudentId] = useState("310624104101");
-  const [studentPassword, setStudentPassword] = useState("••••••••••••");
+  const [studentPassword, setStudentPassword] = useState("student123");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -264,7 +264,7 @@ export default function LoginScreen() {
             <div className="grid grid-cols-3 gap-2">
               <button
                 type="button"
-                onClick={() => login("faculty@university.edu", "demo", "faculty")}
+                onClick={() => login("faculty@university.edu", "faculty123", "faculty")}
                 className="px-2 py-2 rounded-lg bg-[#F6F7F4] hover:bg-[#E4E7E2] border border-[#E4E7E2] text-[#18202A] text-[11px] font-semibold flex items-center justify-center gap-1 transition-all cursor-pointer"
                 title="Sign in as Faculty"
               >
@@ -273,7 +273,7 @@ export default function LoginScreen() {
               </button>
               <button
                 type="button"
-                onClick={() => login("coordinator@university.edu", "demo", "coordinator")}
+                onClick={() => login("coordinator@university.edu", "coordinator123", "coordinator")}
                 className="px-2 py-2 rounded-lg bg-[#F6F7F4] hover:bg-[#E4E7E2] border border-[#E4E7E2] text-[#18202A] text-[11px] font-semibold flex items-center justify-center gap-1 transition-all cursor-pointer"
                 title="Sign in as Academic Coordinator"
               >
@@ -282,7 +282,7 @@ export default function LoginScreen() {
               </button>
               <button
                 type="button"
-                onClick={() => login("310624104101", "demo", "student")}
+                onClick={() => login("310624104101", "student123", "student")}
                 className="px-2 py-2 rounded-lg bg-[#263B8F]/10 hover:bg-[#263B8F]/20 border border-[#263B8F]/30 text-[#263B8F] text-[11px] font-bold flex items-center justify-center gap-1 transition-all cursor-pointer"
                 title="Sign in as Rahul Kumar (Student)"
               >
